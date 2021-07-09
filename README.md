@@ -19,12 +19,16 @@ Server requirements
 ### Steps to install
 - ``laravel new oauth2``
 - ``composer require laravel/passport``
-- ``php artisan passport:install``
 - ``composer require laravel/breeze``
 - ``php artisan migrate``
+- ``php artisan passport:install``
 - ``php artisan breeze:install``
 - ``npm install && npm run dev``
-- ``php artisan migrate``
 - ``php artisan vendor:publish --tag=passport-views``
 - ``php artisan passport:client``
 - ``php artisan optimize:clear``
+
+Config according to official documentation.
+>NOTE: For the correct display of styles, add a link to the bootstrap styles in the resources/vendor/passport/authorize.blade.php file
+``<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">``
+
